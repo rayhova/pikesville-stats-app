@@ -12,7 +12,8 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-        BUNDLE_ID: com.pikesvillembb.app
+        BUNDLE_ID: com.pikesville.app
+        APP_STORE_APPLE_ID: "6771496065"
         XCODE_WORKSPACE: ios/App/App.xcworkspace
         XCODE_SCHEME: App
     scripts:
@@ -54,6 +55,7 @@ workflows:
     publishing:
       app_store_connect:
         auth: integration
+        apple_id: $APP_STORE_APPLE_ID
         submit_to_testflight: true
       email:
         recipients:

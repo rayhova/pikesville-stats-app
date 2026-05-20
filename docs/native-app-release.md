@@ -6,7 +6,8 @@ The native app shells are built with Capacitor and load the production app at
 ## App Identity
 
 - App name: `Pikesville MBB`
-- Bundle/package ID: `com.pikesvillembb.app`
+- Android package ID: `com.pikesvillembb.app`
+- iOS Bundle ID: `com.pikesville.app`
 - Source URL: `https://app.pikesvillembb.com`
 - Icon/splash source: `resources/icon.png` and `resources/splash.png`
 
@@ -67,7 +68,7 @@ Codemagic workflow in `codemagic.yaml`.
 
 Known Apple signing values:
 
-- Bundle ID: `com.pikesvillembb.app`
+- iOS Bundle ID: `com.pikesville.app`
 - Apple Developer Team ID: `WFGQ3RHL22`
 - App Store Connect API Issuer ID: `d0da13eb-2521-4014-a9cc-39192c07a97e`
 - App Store Connect API Key ID: `2369FD39S5`
@@ -109,7 +110,7 @@ Distribution certificate used by the generated App Store provisioning profile.
 
 ```text
 Name: Pikesville MBB
-Bundle ID: com.pikesvillembb.app
+Bundle ID: com.pikesville.app
 SKU: pmbb
 Platform: iOS
 ```
@@ -152,7 +153,7 @@ Run `mobile:sync` after changing Capacitor config or native plugins.
 
 ## Store Prep
 
-- Create App Store Connect app using bundle ID `com.pikesvillembb.app`.
+- Create App Store Connect app using bundle ID `com.pikesville.app`.
 - Create Google Play app using package ID `com.pikesvillembb.app`.
 - Prepare screenshots for phone and tablet.
 - Add privacy policy URL and support URL.
