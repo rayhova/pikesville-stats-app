@@ -90,17 +90,32 @@ Key ID: 2369FD39S5
 Team ID: WFGQ3RHL22
 ```
 
-5. In App Store Connect, create the app record if it does not exist yet:
+5. Add a secure Codemagic environment variable:
+
+```text
+CERTIFICATE_PRIVATE_KEY
+```
+
+Use the full contents of this local file:
+
+```text
+ios/signing/codemagic_certificate_private_key.pem
+```
+
+Keep it secret. This private key lets Codemagic create/save the Apple
+Distribution certificate used by the generated App Store provisioning profile.
+
+6. In App Store Connect, create the app record if it does not exist yet:
 
 ```text
 Name: Pikesville MBB
 Bundle ID: com.pikesvillembb.app
-SKU: pikesville-mbb
+SKU: pmbb
 Platform: iOS
 ```
 
-6. Run the `Pikesville MBB iOS Release` workflow in Codemagic.
-7. Download the generated `.ipa` artifact, or enable TestFlight publishing once
+7. Run the `Pikesville MBB iOS Release` workflow in Codemagic.
+8. Download the generated `.ipa` artifact, or enable TestFlight publishing once
    the App Store Connect app record is ready.
 
 #### Local Xcode Build

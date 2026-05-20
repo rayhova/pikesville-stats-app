@@ -21,6 +21,7 @@ android/keystores
 *.keystore
 
 # iOS local/generated files
+ios/signing
 ios/App/Pods
 ios/App/build
 ios/App/DerivedData
