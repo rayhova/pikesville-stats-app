@@ -1,0 +1,22 @@
+"use client";
+
+import { createBrowserClient } from "@supabase/ssr";
+import type { SupabaseClient } from "@supabase/supabase-js";
+
+let browserClient: SupabaseClient | null = null;
+
+export function createSupabaseBrowserClient() {
+  if (browserClient) {
+    return browserClient;
+  }
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const publishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+
+  if (!url || !publishableKey) {
+    throw new Error("Supabase browser environment variables are missing.");
+  }
+
+  browserClient = createBrowserClient(url, publishableKey);
+  return browserClient;
+}

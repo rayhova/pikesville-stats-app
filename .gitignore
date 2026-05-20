@@ -1,0 +1,37 @@
+.next
+node_modules
+.env
+.env.local
+.env.development.local
+.env.production.local
+.vercel
+coverage
+tsconfig.tsbuildinfo
+
+# Native build outputs and local signing files
+android/.gradle
+android/build
+android/app/build
+android/local.properties
+android/keystore.properties
+android/keystores
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# iOS local/generated files
+ios/App/Pods
+ios/App/build
+ios/App/DerivedData
+ios/App/*.xcarchive
+ios/App/*.ipa
+ios/App/App.xcworkspace/xcuserdata
+ios/App/App.xcodeproj/xcuserdata
+
+# OS/editor noise
+.DS_Store
+*.log
+
+# Supabase local project linkage/cache
+supabase/.temp
