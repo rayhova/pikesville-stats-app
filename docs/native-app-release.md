@@ -156,5 +156,5 @@ Run `mobile:sync` after changing Capacitor config or native plugins.
 - Create App Store Connect app using bundle ID `com.pikesville.app`.
 - Create Google Play app using package ID `com.pikesvillembb.app`.
 - Prepare screenshots for phone and tablet.
-- Add privacy policy URL and support URL.
+- Use `docs/app-store-submission-packet.md` for copy/paste App Store listing text, review notes, privacy labels, support URL, and privacy URL.
 - Confirm invite, login, password reset, RSVP, proof upload, alerts, and live scorer workflows inside the native shell before review.

@@ -173,6 +173,33 @@ p {
   backdrop-filter: blur(12px);
 }
 
+.legal-page-shell {
+  max-width: 960px;
+}
+
+.legal-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.legal-panel h1 {
+  margin-bottom: 0;
+}
+
+.legal-copy {
+  display: grid;
+  gap: 14px;
+}
+
+.legal-copy h2 {
+  margin: 16px 0 0;
+}
+
+.legal-copy p,
+.legal-copy ul {
+  margin: 0;
+}
+
 .action-row {
   margin-top: 20px;
 }

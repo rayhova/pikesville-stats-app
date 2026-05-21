@@ -9,6 +9,8 @@ const PUBLIC_PATHS = new Set([
   "/auth/accept",
   "/auth/reset-password",
   "/auth/update-password",
+  "/privacy",
+  "/support",
   "/manifest.webmanifest",
   "/sw.js",
   "/offline.html",
